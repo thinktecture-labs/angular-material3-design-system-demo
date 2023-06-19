@@ -1,0 +1,55 @@
+@mixin theme {
+  --md-sys-color-primary: #a8c8ff;
+  --md-sys-color-on-primary: #003061;
+  --md-sys-color-primary-container: #004689;
+  --md-sys-color-on-primary-container: #d5e3ff;
+  --md-sys-color-primary-fixed: #d5e3ff;
+  --md-sys-color-on-primary-fixed: #001b3c;
+  --md-sys-color-primary-fixed-dim: #a8c8ff;
+  --md-sys-color-on-primary-fixed-variant: #004689;
+  --md-sys-color-secondary: #bdc7dc;
+  --md-sys-color-on-secondary: #273141;
+  --md-sys-color-secondary-container: #3d4758;
+  --md-sys-color-on-secondary-container: #d9e3f8;
+  --md-sys-color-secondary-fixed: #d9e3f8;
+  --md-sys-color-on-secondary-fixed: #121c2b;
+  --md-sys-color-secondary-fixed-dim: #bdc7dc;
+  --md-sys-color-on-secondary-fixed-variant: #3d4758;
+  --md-sys-color-tertiary: #dbbce1;
+  --md-sys-color-on-tertiary: #3e2845;
+  --md-sys-color-tertiary-container: #563e5d;
+  --md-sys-color-on-tertiary-container: #f8d8fe;
+  --md-sys-color-tertiary-fixed: #f8d8fe;
+  --md-sys-color-on-tertiary-fixed: #28132f;
+  --md-sys-color-tertiary-fixed-dim: #dbbce1;
+  --md-sys-color-on-tertiary-fixed-variant: #563e5d;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffdad6;
+  --md-sys-color-outline: #8e9199;
+  --md-sys-color-surface: #121316;
+  --md-sys-color-on-surface: #c7c6ca;
+  --md-sys-color-surface-variant: #43474e;
+  --md-sys-color-on-surface-variant: #c4c6cf;
+  --md-sys-color-inverse-surface: #e3e2e6;
+  --md-sys-color-inverse-on-surface: #1a1c1e;
+  --md-sys-color-inverse-primary: #245fa6;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-surface-tint: #a8c8ff;
+  --md-sys-color-outline-variant: #43474e;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-surface-container-highest: #343538;
+  --md-sys-color-surface-container-high: #292a2d;
+  --md-sys-color-surface-container: #1e2023;
+  --md-sys-color-surface-container-low: #1a1c1e;
+  --md-sys-color-surface-container-lowest: #0d0e11;
+  --md-sys-color-surface-bright: #38393c;
+  --md-sys-color-surface-dim: #121316;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include theme;
+  }
+}

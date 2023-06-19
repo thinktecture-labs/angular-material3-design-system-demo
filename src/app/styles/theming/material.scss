@@ -1,0 +1,92 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+@use 'sass:map';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+
+$primary-palette: (
+  50: #ffebee,
+  100: #ffcdd2,
+  200: #ef9a9a,
+  300: #e57373,
+  400: #ef5350,
+  500: var(--md-sys-color-primary),
+  600: #e53935,
+  700: #d32f2f,
+  800: #c62828,
+  900: #b71c1c,
+  A100: #ff8a80,
+  A200: #ff5252,
+  A400: #ff1744,
+  A700: #d50000,
+  contrast: (
+    50: var(--md-sys-color-on-primary),
+    100: var(--md-sys-color-on-primary),
+    200: var(--md-sys-color-on-primary),
+    300: var(--md-sys-color-on-primary),
+    400: var(--md-sys-color-on-primary),
+    500: var(--md-sys-color-on-primary),
+    600: var(--md-sys-color-on-primary),
+    700: var(--md-sys-color-on-primary),
+    800: var(--md-sys-color-on-primary),
+    900: var(--md-sys-color-on-primary),
+    A100: var(--md-sys-color-on-primary),
+    A200: var(--md-sys-color-on-primary),
+    A400: var(--md-sys-color-on-primary),
+    A700: var(--md-sys-color-on-primary),
+  ),
+);
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$design-system-impl-material-primary: mat.define-palette($primary-palette);
+$design-system-impl-material-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$design-system-impl-material-warn: mat.define-palette(mat.$red-palette);
+$components: (
+  color: (
+    background: (
+      app-bar: var(--md-sys-color-surface),
+    )
+  )
+);
+
+@media (prefers-color-scheme: light) {
+
+  // Create the theme object. A theme consists of configurations for individual
+  // theming systems such as "color" or "typography".
+  $base-theme: mat.define-light-theme((
+    color: (
+      primary: $design-system-impl-material-primary,
+      accent: $design-system-impl-material-accent,
+      warn: $design-system-impl-material-warn,
+    ),
+  ));
+
+
+  // Include theme styles for core and each component used in your app.
+  // Alternatively, you can import and @include the theme mixins for each component
+  // that you are using.
+  @include mat.all-component-themes(map.deep-merge($base-theme, $components));
+}
+
+@media (prefers-color-scheme: dark) {
+  $base-theme: mat.define-dark-theme((
+    color: (
+      primary: $design-system-impl-material-primary,
+      accent: $design-system-impl-material-accent,
+      warn: $design-system-impl-material-warn,
+    ),
+  ));
+
+  @include mat.all-component-themes(map.deep-merge($base-theme, $components));
+}
