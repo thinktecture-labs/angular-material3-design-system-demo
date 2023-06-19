@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import {MainLayoutComponent} from './main-layout/main-layout.component';
+import {MainLayoutComponent} from './common/main-layout/main-layout.component';
 
 @Component({
   selector: 'labs-root',

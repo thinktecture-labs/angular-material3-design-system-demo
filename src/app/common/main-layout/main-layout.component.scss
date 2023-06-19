@@ -1,0 +1,36 @@
+@use '../../styles/mixins/typography';
+
+.drawer-container {
+  height: 100%;
+}
+
+.drawer {
+  width: 22.5rem;
+}
+
+.drawer-content {
+  // TODO use tokens instead
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  .top {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+}
+
+.title {
+  @include typography.title-large;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

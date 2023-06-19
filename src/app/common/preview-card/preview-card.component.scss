@@ -1,0 +1,28 @@
+@use 'typography';
+
+.cover {
+  height: 14rem;
+  // TODO use token instead
+  overflow: hidden;
+  border-radius: inherit;
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+.title {
+  @include typography.title-large;
+  padding: 1rem;
+}
+
+:host {
+  display: block;
+  background-color: var(--md-sys-color-surface-container);
+  color: var(--on-surface);
+  border-radius: 1rem;
+}

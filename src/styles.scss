@@ -14,4 +14,18 @@ body {
   color: var(--md-sys-color-on-surface);
   // TODO use tokens
   transition: background-color .3s ease;
+
+  &:after {
+    content: '';
+    pointer-events: none;
+    background: var(--md-sys-company-logo);
+    background-size: contain;
+    position: absolute;
+    width: 5.635rem;
+    height: 4.3125rem;
+    right: 4rem;
+    bottom: 4rem;
+    // TODO use token instead
+    z-index: 111111;
+  }
 }

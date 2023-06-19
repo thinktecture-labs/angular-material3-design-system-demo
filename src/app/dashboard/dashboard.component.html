@@ -1,1 +1,12 @@
 <div class="page-title">Dashboard</div>
+<div class="sections">
+  <div class="section">
+    <div class="section-title">Recent</div>
+    <div class="items">
+      <labs-preview-card *ngFor="let item of items" [item]="item"></labs-preview-card>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Active</div>
+  </div>
+</div>

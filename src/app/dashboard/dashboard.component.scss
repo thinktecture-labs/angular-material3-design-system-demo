@@ -3,3 +3,27 @@
 .page-title {
   @include typography.display-large;
 }
+
+.section-title {
+  @include typography.headline-large;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  // TODO use tokens
+  gap: 2rem;
+}
