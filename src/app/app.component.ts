@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import {MainLayoutComponent} from './main-layout/main-layout.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'labs-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, MainLayoutComponent],
   templateUrl: './app.component.html',

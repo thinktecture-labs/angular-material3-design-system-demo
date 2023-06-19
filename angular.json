@@ -19,7 +19,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "labs",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -39,6 +39,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/styles/mixins"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

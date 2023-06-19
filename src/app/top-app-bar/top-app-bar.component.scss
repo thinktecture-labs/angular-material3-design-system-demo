@@ -1,0 +1,8 @@
+.left, .right, .center {
+  flex: 1 0 auto;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}

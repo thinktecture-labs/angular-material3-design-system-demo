@@ -4,6 +4,11 @@
 .drawer {
   width: 22.5rem;
 }
+.drawer-content {
+  // TODO use tokens instead
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
 
 :host {
   display: flex;
