@@ -10,5 +10,8 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background: var(--md-sys-color-surface);
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  // TODO use tokens
+  transition: background-color .3s ease;
 }
