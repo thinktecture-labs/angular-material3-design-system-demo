@@ -60,6 +60,8 @@ $components: (
     ),
     background: (
       app-bar: var(--md-sys-color-surface),
+      background: var(--md-sys-color-surface),
+      dialog: var(--md-sys-color-surface-container),
     )
   )
 );

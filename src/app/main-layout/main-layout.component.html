@@ -1,4 +1,7 @@
 <mat-toolbar>
   App
 </mat-toolbar>
-<ng-content></ng-content>
+<mat-drawer-container class="drawer-container">
+  <mat-drawer class="drawer" mode="side" opened></mat-drawer>
+  <mat-drawer-content><ng-content></ng-content></mat-drawer-content>
+</mat-drawer-container>
