@@ -10,14 +10,13 @@
 
 .drawer-content {
   // TODO use tokens instead
-  padding-top: 2rem;
-  padding-left: 2rem;
+  padding: 2rem;
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
-  
+
   .top {
     display: grid;
     place-items: center;

@@ -6,13 +6,13 @@
 
 .section-title {
   @include typography.headline-large;
+  margin-bottom: 1rem;
 }
 
 .items {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 1rem;
 }
 
 .sections {

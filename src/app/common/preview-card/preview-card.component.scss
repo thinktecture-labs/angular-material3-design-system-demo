@@ -1,3 +1,4 @@
+@use '@angular/material' as mat;
 @use 'typography';
 
 .cover {
@@ -6,14 +7,17 @@
   overflow: hidden;
   border-radius: inherit;
   width: 100%;
+  position: relative;
+  cursor: pointer;
 
   img {
+    position: absolute;
     object-fit: cover;
+    object-position: center;
     height: 100%;
     width: 100%;
   }
 }
-
 
 .title {
   @include typography.title-large;
@@ -24,5 +28,24 @@
   display: block;
   background-color: var(--md-sys-color-surface-container);
   color: var(--on-surface);
+  // TODO
   border-radius: 1rem;
+  @include mat.elevation-transition();
+  @include mat.elevation(0);
+
+  &:hover {
+    @include mat.elevation(4);
+  }
+}
+
+
+.card {
+  @include mat.elevation-transition();
+  @include mat.elevation(0);
+
+  @media (hover) {
+    &:hover {
+      @include mat.elevation(8);
+    }
+  }
 }
