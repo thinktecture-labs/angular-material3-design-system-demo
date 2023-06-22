@@ -120,6 +120,7 @@ $length: math.sqrt($count);
 .title {
   @include typography.title-large;
   padding: var(--md-sys-size-4);
+  white-space: nowrap;
 }
 
 labs-active-project-card {
@@ -130,4 +131,16 @@ labs-active-project-card {
   color: var(--on-surface);
   // TODO
   border-radius: var(--md-sys-size-4);
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--md-sys-size-3);
+    gap: var(--md-sys-size-4);
+    .progress {
+      max-width: 10rem;
+    }
+  }
 }
+
