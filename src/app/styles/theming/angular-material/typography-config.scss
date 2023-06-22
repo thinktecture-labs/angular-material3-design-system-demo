@@ -1,0 +1,77 @@
+@use '@angular/material' as mat;
+
+$mapping: mat.define-typography-config(
+  $headline-1: mat.define-typography-level(
+      var(--md-sys-typescale-display-large-size),
+      var(--md-sys-typescale-display-large-line-height),
+      var(--md-sys-typescale-display-large-weight),
+      var(--md-sys-typescale-display-large-font),
+      var(--md-sys-typescale-display-large-tracking),
+  ),
+  $headline-2: mat.define-typography-level(
+      var(--md-sys-typescale-display-medium-size),
+      var(--md-sys-typescale-display-medium-line-height),
+      var(--md-sys-typescale-display-medium-weight),
+      var(--md-sys-typescale-display-medium-font),
+      var(--md-sys-typescale-display-medium-tracking),),
+  $headline-3: mat.define-typography-level(
+      var(--md-sys-typescale-display-small-size),
+      var(--md-sys-typescale-display-small-line-height),
+      var(--md-sys-typescale-display-small-weight),
+      var(--md-sys-typescale-display-small-font),
+      var(--md-sys-typescale-display-small-tracking),),
+  $headline-4: mat.define-typography-level(
+      var(--md-sys-typescale-headline-large-size),
+      var(--md-sys-typescale-headline-large-line-height),
+      var(--md-sys-typescale-headline-large-weight),
+      var(--md-sys-typescale-headline-large-font),
+      var(--md-sys-typescale-headline-large-tracking),),
+  $headline-5: mat.define-typography-level(
+      var(--md-sys-typescale-headline-medium-size),
+      var(--md-sys-typescale-headline-medium-line-height),
+      var(--md-sys-typescale-headline-medium-weight),
+      var(--md-sys-typescale-headline-medium-font),
+      var(--md-sys-typescale-headline-medium-tracking),),
+  $headline-6: mat.define-typography-level(
+      var(--md-sys-typescale-headline-small-size),
+      var(--md-sys-typescale-headline-small-line-height),
+      var(--md-sys-typescale-headline-small-weight),
+      var(--md-sys-typescale-headline-small-font),
+      var(--md-sys-typescale-headline-small-tracking),),
+  $subtitle-1: mat.define-typography-level(
+      var(--md-sys-typescale-title-large-size),
+      var(--md-sys-typescale-title-large-line-height),
+      var(--md-sys-typescale-title-large-weight),
+      var(--md-sys-typescale-title-large-font),
+      var(--md-sys-typescale-title-large-tracking),),
+  $subtitle-2: mat.define-typography-level(
+      var(--md-sys-typescale-title-small-size),
+      var(--md-sys-typescale-title-small-line-height),
+      var(--md-sys-typescale-title-small-weight),
+      var(--md-sys-typescale-title-small-font),
+      var(--md-sys-typescale-title-small-tracking),),
+  $body-1: mat.define-typography-level(
+      var(--md-sys-typescale-body-large-size),
+      var(--md-sys-typescale-body-large-line-height),
+      var(--md-sys-typescale-body-large-weight),
+      var(--md-sys-typescale-body-large-font),
+      var(--md-sys-typescale-body-large-tracking),),
+  $body-2: mat.define-typography-level(
+      var(--md-sys-typescale-body-medium-size),
+      var(--md-sys-typescale-body-medium-line-height),
+      var(--md-sys-typescale-body-medium-weight),
+      var(--md-sys-typescale-body-medium-font),
+      var(--md-sys-typescale-body-medium-tracking),),
+  $caption: mat.define-typography-level(
+      var(--md-sys-typescale-body-large-size),
+      var(--md-sys-typescale-body-large-line-height),
+      var(--md-sys-typescale-body-large-weight),
+      var(--md-sys-typescale-body-large-font),
+      var(--md-sys-typescale-body-large-tracking),),
+  $button: mat.define-typography-level(
+      var(--md-sys-typescale-label-large-size),
+      var(--md-sys-typescale-label-large-line-height),
+      var(--md-sys-typescale-label-large-weight),
+      var(--md-sys-typescale-label-large-font),
+      var(--md-sys-typescale-label-large-tracking),),
+);

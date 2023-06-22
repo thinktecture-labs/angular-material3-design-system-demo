@@ -1,6 +1,6 @@
 // TODO use ref tokens
 
-@mixin theme {
+@mixin light {
   --md-sys-color-primary: #245fa6;
   --md-sys-color-on-primary: #ffffff;
   --md-sys-color-primary-container: #d5e3ff;
@@ -54,6 +54,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    @include theme;
+    @include light;
   }
 }
