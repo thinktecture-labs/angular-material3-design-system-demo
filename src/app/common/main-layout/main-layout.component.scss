@@ -1,4 +1,4 @@
-@use '../../styles/mixins/typography';
+@use 'typography';
 
 .drawer-container {
   height: 100%;
@@ -9,8 +9,7 @@
 }
 
 .drawer-content {
-  // TODO use tokens instead
-  padding: 2rem;
+  padding: var(--md-sys-size-8);
 }
 
 .navigation {
@@ -20,8 +19,8 @@
   .top {
     display: grid;
     place-items: center;
-    padding: 2rem;
-    gap: 1.5rem;
+    padding: var(--md-sys-size-8);
+    gap: var(--md-sys-size-6);
   }
 }
 

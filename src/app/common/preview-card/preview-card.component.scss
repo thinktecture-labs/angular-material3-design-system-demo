@@ -3,7 +3,6 @@
 
 .cover {
   height: 14rem;
-  // TODO use token instead
   overflow: hidden;
   border-radius: inherit;
   width: 100%;
@@ -21,15 +20,14 @@
 
 .title {
   @include typography.title-large;
-  padding: 1rem;
+  padding: var(--md-sys-size-4);
 }
 
 :host {
   display: block;
   background-color: var(--md-sys-color-surface-container);
   color: var(--on-surface);
-  // TODO
-  border-radius: 1rem;
+  border-radius: var(--md-sys-size-4);
   @include mat.elevation-transition();
   @include mat.elevation(0);
 
@@ -37,7 +35,6 @@
     @include mat.elevation(4);
   }
 }
-
 
 .card {
   @include mat.elevation-transition();

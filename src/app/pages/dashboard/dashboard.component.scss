@@ -7,13 +7,13 @@
 
 .section-title {
   @include typography.headline-large;
-  margin-bottom: 1rem;
+  margin-bottom: var(--md-sys-size-4);
 }
 
 .items {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--md-sys-size-8);
 }
 
 .sections {
@@ -22,7 +22,7 @@
   @include breakpoints.use(xs, s, m) {
     grid-template-columns: 1fr;
   }
-  gap: 2rem;
+  gap: var(--md-sys-size-8);
 
   .section:last-child {
     @include breakpoints.use(xs, s, m) {
@@ -34,6 +34,5 @@
 :host {
   display: flex;
   flex-direction: column;
-  // TODO use tokens
-  gap: 2rem;
+  gap: var(--md-sys-size-8);
 }

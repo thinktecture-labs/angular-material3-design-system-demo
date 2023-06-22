@@ -1,8 +1,8 @@
 import {CommonModule, NgFor} from '@angular/common';
 import {Component} from '@angular/core';
-import {ActiveProjectCardComponent} from '../common/active-project-card/active-project-card.component';
-import {PreviewCardComponent} from '../common/preview-card/preview-card.component';
-import {Project} from '../shared/models/project';
+import {ActiveProjectCardComponent} from '../../common/active-project-card/active-project-card.component';
+import {PreviewCardComponent} from '../../common/preview-card/preview-card.component';
+import {Project} from '../../shared/models/project';
 
 @Component({
   selector: 'labs-dashboard',

@@ -119,7 +119,7 @@ $length: math.sqrt($count);
 
 .title {
   @include typography.title-large;
-  padding: 1rem;
+  padding: var(--md-sys-size-4);
 }
 
 labs-active-project-card {
@@ -129,5 +129,5 @@ labs-active-project-card {
   background-color: var(--md-sys-color-surface-container);
   color: var(--on-surface);
   // TODO
-  border-radius: 1rem;
+  border-radius: var(--md-sys-size-4);
 }

@@ -1,0 +1,15 @@
+// common
+:root {
+  // shape https://m3.material.io/styles/shape/shape-scale-tokens
+  --md-sys-shape-corner-none: 0;
+  --md-sys-shape-corner-extra-small: .25rem;
+  --md-sys-shape-corner-extra-small-top: .25rem .25rem 0 0;
+  --md-sys-shape-corner-small: .5rem;
+  --md-sys-shape-corner-medium: .75rem;
+  --md-sys-shape-corner-large: 1rem;
+  --md-sys-shape-corner-large-end: 0 1rem 1rem 0;
+  --md-sys-shape-corner-large-top: 1rem 1rem 0 0;
+  --md-sys-shape-corner-extra-large: 1.75rem;
+  --md-sys-shape-corner-extra-large-top: 1.75rem 1.75rem 0 0;
+  --md-sys-shape-corner-full: 50%;
+}
