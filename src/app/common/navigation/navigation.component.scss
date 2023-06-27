@@ -1,10 +1,15 @@
+@use 'state';
+
 :host {
   display: block;
   padding: var(--md-sys-size-4);
 }
 
 mat-list-item {
+  @include state.interactive;
+
   &.active {
-    background-color: var(--md-sys-color-primary-container);
+    background-color: var(--md-sys-color-secondary-container);
   }
+
 }

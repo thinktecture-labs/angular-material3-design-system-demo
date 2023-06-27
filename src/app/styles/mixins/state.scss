@@ -1,0 +1,110 @@
+@use 'overlay';
+@use '@angular/material' as mat;
+
+@mixin enabled($scale: 1) {
+  @include overlay.create(0, $scale);
+}
+
+@mixin hover($scale: 1) {
+  @include overlay.create(var(--md-sys-state-hover-state-layer-opacity), $scale);
+}
+
+@mixin focused($scale: 1) {
+  @include overlay.create(var(--md-sys-state-focused-state-layer-opacity), $scale);
+}
+
+@mixin pressed($scale: 1) {
+  @include overlay.create(var(--md-sys-state-pressed-state-layer-opacity), $scale);
+}
+
+@mixin dragged($scale: 1) {
+  @include mat.elevation(8);
+  @include overlay.create(var(--md-sys-state-dragged-state-layer-opacity), $scale);
+}
+
+@mixin selected($scale: 1) {
+  @include overlay.create(var(--md-sys-state-selected-state-layer-opacity), $scale);
+}
+
+@mixin disabled($scale: 1) {
+  @include overlay.create(0, $scale);
+  opacity: var(--md-sys-state-disabled-state-layer-opacity);
+  cursor: default;
+}
+
+@mixin interactive {
+  @include enabled;
+  user-select: none;
+  cursor: pointer;
+
+  @media (hover) {
+    &:hover {
+      @include hover;
+    }
+  }
+
+  &:focus, &.has-focus {
+    @include focused;
+  }
+
+  &:active {
+    @include pressed;
+  }
+
+  &.dragged {
+    @include dragged;
+    @include mat.elevation(8);
+  }
+
+  &.selected {
+    @include selected;
+  }
+
+  &.disabled, &[disabled] {
+    @include disabled;
+  }
+}
+
+@mixin interactive-primary {
+  --primary-constrast-patch: 1;
+  @include interactive;
+  --md-sys-color-surface: var(--md-sys-color-primary);
+  --md-sys-color-on-surface: var(--md-sys-color-on-primary);
+  --color-overlay: white;
+}
+
+@mixin interactive-circle {
+  @include enabled(.1);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  user-select: none;
+  cursor: pointer;
+
+  @media (hover) {
+    &:hover {
+      @include hover(1.25);
+    }
+  }
+
+  &:focus, &.has-focus {
+    @include focused(1.25);
+  }
+
+  &:active {
+    @include pressed(1.25);
+  }
+
+  &.dragged {
+    @include dragged(1.25);
+    @include mat.elevation(8);
+  }
+
+  &.selected {
+    @include selected(1.25);
+  }
+
+  &.disabled, &[disabled] {
+    @include disabled;
+  }
+}
+
