@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  padding: var(--md-sys-size-4);
+}
+
+mat-list-item {
+  &.active {
+    background-color: var(--md-sys-color-primary-container);
+  }
+}
