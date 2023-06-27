@@ -2,7 +2,7 @@
 @use '@angular/material' as mat;
 
 @mixin enabled($scale: 1) {
-  @include overlay.create(0, $scale);
+  @include overlay.create(var(--md-sys-state-enabled-state-layer-opacity), $scale);
 }
 
 @mixin hover($scale: 1) {
