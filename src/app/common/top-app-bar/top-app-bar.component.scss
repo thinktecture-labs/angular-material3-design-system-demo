@@ -6,3 +6,20 @@
   display: grid;
   place-items: center;
 }
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--md-sys-size-4);
+}
+
+.bell-mock {
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
+.avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+}
