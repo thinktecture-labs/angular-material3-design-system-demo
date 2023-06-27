@@ -68,10 +68,3 @@ $components: (
   @include mat.all-component-themes(map.deep-merge($base-theme, $components));
 }
 
-.mat-mdc-progress-bar {
-  --mdc-linear-progress-track-color: var(--md-sys-color-surface-container-highest) !important;
-}
-
-.mat-mdc-list-base {
-  --mdc-list-list-item-container-shape: 4rem !important;
-}

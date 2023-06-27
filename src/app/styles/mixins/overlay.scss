@@ -1,17 +1,14 @@
-@mixin create($alpha: 0, $scale: 1) {
+@mixin create($opacity: 0, $scale: 1) {
   position: relative;
   z-index: 0;
-  $class: 'after';
-  $zIndex: 1;
-  $color: currentColor;
 
-  &:#{$class} {
+  &:after {
     pointer-events: none;
     content: '';
-    z-index: $zIndex;
-    opacity: $alpha;
+    z-index: 1;
+    opacity: $opacity;
     position: absolute;
-    background-color: $color;
+    background-color: currentColor;
     transition: opacity .3s ease, transform .3s ease, background .3s ease;
     transform: scale($scale);
     top: 0;
