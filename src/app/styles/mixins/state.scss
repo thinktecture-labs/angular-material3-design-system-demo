@@ -1,33 +1,33 @@
-@use 'overlay';
+@use 'overlay' as state-overlay;
 @use '@angular/material' as mat;
 
 @mixin enabled($scale: 1) {
-  @include overlay.create(var(--md-sys-state-enabled-state-layer-opacity), $scale);
+  @include state-overlay.create(var(--md-sys-state-enabled-state-layer-opacity), $scale);
 }
 
 @mixin hover($scale: 1) {
-  @include overlay.create(var(--md-sys-state-hover-state-layer-opacity), $scale);
+  @include state-overlay.create(var(--md-sys-state-hover-state-layer-opacity), $scale);
 }
 
 @mixin focused($scale: 1) {
-  @include overlay.create(var(--md-sys-state-focused-state-layer-opacity), $scale);
+  @include state-overlay.create(var(--md-sys-state-focused-state-layer-opacity), $scale);
 }
 
 @mixin pressed($scale: 1) {
-  @include overlay.create(var(--md-sys-state-pressed-state-layer-opacity), $scale);
+  @include state-overlay.create(var(--md-sys-state-pressed-state-layer-opacity), $scale);
 }
 
 @mixin dragged($scale: 1) {
   @include mat.elevation(8);
-  @include overlay.create(var(--md-sys-state-dragged-state-layer-opacity), $scale);
+  @include state-overlay.create(var(--md-sys-state-dragged-state-layer-opacity), $scale);
 }
 
 @mixin selected($scale: 1) {
-  @include overlay.create(var(--md-sys-state-selected-state-layer-opacity), $scale);
+  @include state-overlay.create(var(--md-sys-state-selected-state-layer-opacity), $scale);
 }
 
 @mixin disabled($scale: 1) {
-  @include overlay.create(0, $scale);
+  @include state-overlay.create(0, $scale);
   opacity: var(--md-sys-state-disabled-state-layer-opacity);
   cursor: default;
 }
