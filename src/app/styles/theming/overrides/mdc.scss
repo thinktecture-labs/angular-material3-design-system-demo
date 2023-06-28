@@ -3,5 +3,5 @@
 }
 
 .mat-mdc-list-base {
-  --mdc-list-list-item-container-shape: 4rem !important;
+  --mdc-list-list-item-container-shape: var(--md-sys-shape-corner-full) !important;
 }
