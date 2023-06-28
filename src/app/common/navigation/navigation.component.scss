@@ -6,7 +6,8 @@
 }
 
 .item {
-    @include state.interactive;
+  @include state.interactive;
+
   &.active {
     background-color: var(--md-sys-color-secondary-container);
   }
