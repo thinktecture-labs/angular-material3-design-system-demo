@@ -1,0 +1,13 @@
+{
+  "base": "http://localhost:6006/?path=",
+  "stories": [
+    {
+      "title": "Pages / Dashboard / Default",
+      "route": "/story/pages-dashboard--default"
+    },
+    {
+      "title": "Components / Card",
+      "route": "/story/components-card--default"
+    }
+  ]
+}
