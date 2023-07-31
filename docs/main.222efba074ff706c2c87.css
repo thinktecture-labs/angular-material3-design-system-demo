@@ -6082,15 +6082,3 @@ body {
   color: var(--md-sys-color-on-surface);
   transition: background-color 0.3s ease;
 }
-body:after {
-  content: "";
-  pointer-events: none;
-  background: var(--md-sys-company-logo);
-  background-size: contain;
-  position: absolute;
-  width: 5.635rem;
-  height: 4.3125rem;
-  left: 15rem;
-  bottom: 4rem;
-  z-index: 111111;
-}
