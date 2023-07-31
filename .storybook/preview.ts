@@ -14,6 +14,39 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    backgrounds: {
+      default: 'surface',
+      values: [
+        {
+          name: 'surface',
+          value: 'var(--md-sys-color-surface)',
+        },
+        {
+          name: 'surface variant',
+          value: 'var(--md-sys-color-surface-variant)',
+        },
+        {
+          name: 'surface container',
+          value: 'var(--md-sys-color-surface-container)',
+        },
+        {
+          name: 'surface container high',
+          value: 'var(--md-sys-color-surface-container-high)',
+        },
+        {
+          name: 'surface container highest',
+          value: 'var(--md-sys-color-surface-container-highest)',
+        },
+        {
+          name: 'surface container low',
+          value: 'var(--md-sys-color-surface-container-low)',
+        },
+        {
+          name: 'surface container lowest',
+          value: 'var(--md-sys-color-surface-container-lowest)',
+        }
+      ],
+    },
     viewport: {
       viewports,
     },
@@ -21,3 +54,13 @@ const preview: Preview = {
 };
 
 export default preview;
+
+/*
+
+
+  --md-sys-color-surface-container-highest: var(--md-ref-neutral-neutral90);
+  --md-sys-color-surface-container-high: var(--md-ref-neutral-neutral92);
+  --md-sys-color-surface-container: var(--md-ref-neutral-neutral94);
+  --md-sys-color-surface-container-low: var(--md-ref-neutral-neutral96);
+  --md-sys-color-surface-container-lowest: var(--md-ref-neutral-neutral100);
+ */

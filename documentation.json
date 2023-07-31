@@ -898,21 +898,21 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/common/active-project-card/active-project-card.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    item: {id: '1', title: 'Active Card', preview: ''},\n    progress: 42,\n  }\n}"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/common/active-project-card/active-project-card.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    item: {id: '1', title: 'Active Card', preview: ''},\n    progress: 42,\n  }\n}"
             },
             {
                 "name": "Default",
@@ -1042,7 +1042,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    actions: {argTypesRegex: \"^on[A-Z].*\"},\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n    viewport: {\n      viewports,\n    },\n  },\n}"
+                "defaultValue": "{\n  parameters: {\n    actions: {argTypesRegex: \"^on[A-Z].*\"},\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n    backgrounds: {\n      default: 'surface',\n      values: [\n        {\n          name: 'surface',\n          value: 'var(--md-sys-color-surface)',\n        },\n        {\n          name: 'surface variant',\n          value: 'var(--md-sys-color-surface-variant)',\n        },\n        {\n          name: 'surface container',\n          value: 'var(--md-sys-color-surface-container)',\n        },\n        {\n          name: 'surface container high',\n          value: 'var(--md-sys-color-surface-container-high)',\n        },\n        {\n          name: 'surface container highest',\n          value: 'var(--md-sys-color-surface-container-highest)',\n        },\n        {\n          name: 'surface container low',\n          value: 'var(--md-sys-color-surface-container-low)',\n        },\n        {\n          name: 'surface container lowest',\n          value: 'var(--md-sys-color-surface-container-lowest)',\n        }\n      ],\n    },\n    viewport: {\n      viewports,\n    },\n  },\n}"
             },
             {
                 "name": "Primary",
@@ -1167,28 +1167,6 @@
                     "defaultValue": "{\n  providers: [provideRouter(routes, withHashLocation()), provideAnimations()]\n}"
                 }
             ],
-            "src/app/common/active-project-card/active-project-card.component.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/common/active-project-card/active-project-card.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    item: {id: '1', title: 'Active Card', preview: ''},\n    progress: 42,\n  }\n}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/common/active-project-card/active-project-card.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<ActiveProjectCardComponent>",
-                    "defaultValue": "{\n  title: 'Common / Cards / Active Project',\n  component: ActiveProjectCardComponent,\n  argTypes: {\n    progress: {\n      control: {type: 'range', min: 0, max: 100, step: 3}\n    }\n  }\n}"
-                }
-            ],
             "src/app/pages/dashboard/dashboard.component.stories.ts": [
                 {
                     "name": "Default",
@@ -1209,6 +1187,28 @@
                     "deprecationMessage": "",
                     "type": "StoryFn<DashboardComponent>",
                     "defaultValue": "(args: DashboardComponent) => ({\n  props: {},\n})"
+                }
+            ],
+            "src/app/common/active-project-card/active-project-card.component.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/common/active-project-card/active-project-card.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    item: {id: '1', title: 'Active Card', preview: ''},\n    progress: 42,\n  }\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/common/active-project-card/active-project-card.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ActiveProjectCardComponent>",
+                    "defaultValue": "{\n  title: 'Common / Cards / Active Project',\n  component: ActiveProjectCardComponent,\n  argTypes: {\n    progress: {\n      control: {type: 'range', min: 0, max: 100, step: 3}\n    }\n  }\n}"
                 }
             ],
             "src/app/common/logo/logo.component.stories.ts": [
@@ -1380,7 +1380,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    actions: {argTypesRegex: \"^on[A-Z].*\"},\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n    viewport: {\n      viewports,\n    },\n  },\n}"
+                    "defaultValue": "{\n  parameters: {\n    actions: {argTypesRegex: \"^on[A-Z].*\"},\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n    backgrounds: {\n      default: 'surface',\n      values: [\n        {\n          name: 'surface',\n          value: 'var(--md-sys-color-surface)',\n        },\n        {\n          name: 'surface variant',\n          value: 'var(--md-sys-color-surface-variant)',\n        },\n        {\n          name: 'surface container',\n          value: 'var(--md-sys-color-surface-container)',\n        },\n        {\n          name: 'surface container high',\n          value: 'var(--md-sys-color-surface-container-high)',\n        },\n        {\n          name: 'surface container highest',\n          value: 'var(--md-sys-color-surface-container-highest)',\n        },\n        {\n          name: 'surface container low',\n          value: 'var(--md-sys-color-surface-container-low)',\n        },\n        {\n          name: 'surface container lowest',\n          value: 'var(--md-sys-color-surface-container-lowest)',\n        }\n      ],\n    },\n    viewport: {\n      viewports,\n    },\n  },\n}"
                 }
             ]
         },
