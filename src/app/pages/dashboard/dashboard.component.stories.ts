@@ -1,4 +1,4 @@
-import {Meta, Story} from '@storybook/angular';
+import {Meta, StoryFn} from '@storybook/angular';
 import {DashboardComponent} from './dashboard.component';
 
 export default {
@@ -9,7 +9,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<DashboardComponent> = (args: DashboardComponent) => ({
+const Template: StoryFn<DashboardComponent> = (args: DashboardComponent) => ({
   props: {},
 });
 

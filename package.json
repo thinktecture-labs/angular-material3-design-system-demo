@@ -38,6 +38,7 @@
     "@storybook/angular": "^7.1.1",
     "@storybook/blocks": "^7.1.1",
     "@storybook/testing-library": "^0.2.0",
+    "@types/figma": "^1.0.4",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",

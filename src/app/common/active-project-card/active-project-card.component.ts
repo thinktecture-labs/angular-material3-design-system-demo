@@ -14,4 +14,5 @@ import {Project} from '../../shared/models/project';
 })
 export class ActiveProjectCardComponent {
   @Input({required: true}) item?: Project;
+  @Input() progress: number = 0;
 }

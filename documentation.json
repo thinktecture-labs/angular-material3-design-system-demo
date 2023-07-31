@@ -896,6 +896,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/common/preview-card/preview-card.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1022,8 +1032,18 @@
                 "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<DashboardComponent>",
+                "type": "StoryFn<DashboardComponent>",
                 "defaultValue": "(args: DashboardComponent) => ({\n  props: {},\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/common/preview-card/preview-card.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<PreviewCardComponent>",
+                "defaultValue": "(args: PreviewCardComponent) => ({\n  props: {...args},\n})"
             }
         ],
         "functions": [],
@@ -1094,8 +1114,30 @@
                     "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<DashboardComponent>",
+                    "type": "StoryFn<DashboardComponent>",
                     "defaultValue": "(args: DashboardComponent) => ({\n  props: {},\n})"
+                }
+            ],
+            "src/app/common/preview-card/preview-card.component.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/common/preview-card/preview-card.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/common/preview-card/preview-card.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<PreviewCardComponent>",
+                    "defaultValue": "(args: PreviewCardComponent) => ({\n  props: {...args},\n})"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -1337,6 +1379,26 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "NavigationComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/common/preview-card/preview-card.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/common/preview-card/preview-card.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
