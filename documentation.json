@@ -908,6 +908,16 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/common/logo/logo.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -919,16 +929,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/common/preview-card/preview-card.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1078,21 +1078,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/common/preview-card/preview-card.component.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "StoryFn<PreviewCardComponent>",
-                "defaultValue": "(args: PreviewCardComponent) => ({\n  props: {...args},\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "StoryFn<DashboardComponent>",
                 "defaultValue": "(args: DashboardComponent) => ({\n  props: {},\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/common/preview-card/preview-card.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StoryFn<PreviewCardComponent>",
+                "defaultValue": "(args: PreviewCardComponent) => ({\n  props: {...args},\n})"
             }
         ],
         "functions": [],
@@ -1189,6 +1189,28 @@
                     "defaultValue": "{\n  title: 'Common / Cards / Active Project',\n  component: ActiveProjectCardComponent,\n  argTypes: {\n    progress: {\n      control: {type: 'range', min: 0, max: 100, step: 3}\n    }\n  }\n}"
                 }
             ],
+            "src/app/pages/dashboard/dashboard.component.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StoryFn<DashboardComponent>",
+                    "defaultValue": "(args: DashboardComponent) => ({\n  props: {},\n})"
+                }
+            ],
             "src/app/common/logo/logo.component.stories.ts": [
                 {
                     "name": "Default",
@@ -1231,28 +1253,6 @@
                     "deprecationMessage": "",
                     "type": "StoryFn<PreviewCardComponent>",
                     "defaultValue": "(args: PreviewCardComponent) => ({\n  props: {...args},\n})"
-                }
-            ],
-            "src/app/pages/dashboard/dashboard.component.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/pages/dashboard/dashboard.component.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "StoryFn<DashboardComponent>",
-                    "defaultValue": "(args: DashboardComponent) => ({\n  props: {},\n})"
                 }
             ],
             "src/stories/Button.stories.ts": [
