@@ -4,9 +4,7 @@ import {DashboardComponent} from './dashboard.component';
 export default {
   title: 'Pages / Dashboard',
   component: DashboardComponent,
-  tag: {
-    bubu: 42
-  }
+  tags: ['page']
 } as Meta;
 
 const Template: StoryFn<DashboardComponent> = (args: DashboardComponent) => ({
