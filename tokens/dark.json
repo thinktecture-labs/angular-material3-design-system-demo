@@ -1,0 +1,16 @@
+{
+  "md": {
+    "sys": {
+      "color": {
+        "on-surface": {
+          "type": "color",
+          "value": "{md.ref.neutral.neutral80}"
+        },
+        "surface-container": {
+          "type": "color",
+          "value": "{md.ref.neutral.neutral12}"
+        }
+      }
+    }
+  }
+}

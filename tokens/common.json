@@ -1,0 +1,28 @@
+{
+  "md": {
+    "ref": {
+      "neutral": {
+        "neutral94": {
+          "type": "color",
+          "value": "#eeedf1"
+        },
+        "neutral10": {
+          "type": "color",
+          "value": "#1a1c1e"
+        },
+        "neutral80": {
+          "type": "color",
+          "value": "#c7c6ca"
+        },
+        "neutral12": {
+          "type": "color",
+          "value": "#1e2023"
+        }
+      }
+    },
+    "size-8": {
+      "type": "number",
+      "value": 24
+    }
+  }
+}

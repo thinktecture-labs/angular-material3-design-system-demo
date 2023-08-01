@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "storybook": "ng run design-system-impl-material:storybook",
-    "build-storybook": "ng run design-system-impl-material:build-storybook"
+    "build-storybook": "ng run design-system-impl-material:build-storybook",
+    "build:tokens": "style-dictionary build"
   },
   "private": true,
   "dependencies": {
@@ -49,6 +50,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.1.1",
+    "style-dictionary": "^3.8.0",
     "typescript": "~5.0.2"
   }
 }
