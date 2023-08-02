@@ -8,10 +8,9 @@ const baseSize = 16; // px
 // REGISTER THE CUSTOM TRANSFORMS
 //
 StyleDictionary.registerTransform({
-  name: 'size/rem', // notice: the name is an override of an existing predefined method (yes, you can do it)
+  name: 'size/rem',
   type: 'value',
   matcher: function (token) {
-    // this is an example of a possible filter (based on the "cti" values) to show how a "matcher" works
     return token.name.indexOf('-size-') !== -1;
   },
   transformer: function (token) {
@@ -34,14 +33,13 @@ StyleDictionary.registerTransform({
 
 StyleDictionary.registerFilter({
   name: 'isRefToken',
-  matcher: function(token) {
+  matcher: function (token) {
     return refTokenRegex.test(token.original.value);
   }
 });
 
 StyleDictionary.registerTransformGroup({
   name: 'custom/web',
-  // notice: here the "size/px" transform is not the pre-defined one, but the custom one we have declared above
   transforms: ['attribute/cti', 'name/cti/kebab', 'color/css', 'size/rem', 'ref/token']
 });
 
@@ -78,8 +76,10 @@ const getConfig = (theme, filesConfig) => ({
   }
 );
 
-  ['dark', 'light', 'common'].forEach(theme => {
-  const StyleDictionaryExtended = StyleDictionary.extend(getConfig(theme, theme === 'common' ? {} : {"filter": "isRefToken"}));
+['dark', 'light', 'common'].forEach(theme => {
+  const StyleDictionaryExtended = StyleDictionary.extend(
+    getConfig(theme, theme === 'common' ? {} : {"filter": "isRefToken"})
+  );
 // FINALLY, BUILD ALL THE PLATFORMS
   StyleDictionaryExtended.buildAllPlatforms();
 });
